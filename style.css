@@ -1,0 +1,222 @@
+/* -------------- variable -------------- */
+:root {
+  --cl-primary:#FFAD5A;
+  --cl-btn: #FF5959;
+  --cl-card-1: #4F9DA6;
+  --cl-card-2: #FF5959;
+  --cl-card-3: #FFF4D6;
+  --bg-secondary : #F4F3F9;
+}
+/* -------------- Base -------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;  /* to make it 10px */
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  width: 100%;
+}
+.container {
+  padding: 0 18rem;
+}
+/* -------------- Typography -------------- */
+.title {
+  font-size: 5rem;
+  font-family: 'Stylish', sans-serif;
+}
+.card h2 {
+  font-size: 2.2rem;
+  margin: 1rem 0;
+}
+.card p {
+  font-size: 1.5rem;
+}
+.clr_ylw {
+  color: var(--cl-primary);
+}
+.clr_red {
+  color: var(--cl-card-2);
+}
+.paragraph{
+  font-size: 1.8rem;
+  font-weight: 300;
+
+} .text_container h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+
+}
+/* -------------- Layout -------------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;  
+  gap: 4rem;
+}
+.header_text {
+  width: 60%;
+}
+.header h1 {
+  padding: 0 2rem;
+  font-size: 5rem;
+  border-left: 5px solid var(--cl-card-2);
+  margin-bottom: 4rem;
+} 
+.header_dp {
+  width: 35%;
+}
+.header_dp img {
+  width: 100%;
+}
+
+/* Mid Content  */
+.mid_content h1 {
+  text-align: center;
+  margin: 10rem 0 4rem;
+}
+.card_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+}
+.card {
+  padding: 3rem 4rem;
+  border-radius: 25px;
+  height: 37rem;
+  width: 30%;
+  /* box-shadow: 0 0 0 5px rgba(0,0,0,0.1); */
+}
+.card img {
+  width: 50%;
+}
+.card-1 {
+  background-color: rgba(66, 144, 153,0.15);
+}
+.card-2 {
+  background-color: rgba(255,89,89,0.15);
+}
+.card-3 {
+  background-color: rgba(255,172,18,0.15);
+}
+
+/* lower mid content  */
+.lower_mid_content {
+  margin: 10rem 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  width: 100%;
+}
+.image_container {
+  width: 70%;
+}
+.image_container img {
+  width: 100%;
+}
+/* My Clintes info */
+.my_info {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my_info > h2 {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 5px solid var(--cl-btn);
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.my_info p {
+  margin-bottom: 4rem;
+}
+.my_info .row {
+  background: #000;
+  color: #fff;
+  padding: 3rem;
+  border-radius: 25px;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* skill */
+.skill {
+  width: 80%;
+}
+.skill:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.skill_info {
+  margin: 0 auto 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.skill_name {
+  text-align: left;
+}
+.skill_percentage {
+  text-align: right;
+}
+.skill_indicator {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.skill_line {
+  border-radius: 10px;
+  background: var(--cl-card-1);
+}
+.skill-1 {width: 85%;}
+.skill-2 {width: 70%;}
+.skill-3 {width: 82%;}
+.skill-4 {width: 65%;}
+.skill-5 {width: 75%;}
+/* footer */
+.footer {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 4rem 0;
+}
+.footer h1 {
+  margin-bottom: 3rem;
+}
+/* -------------- Components -------------- */
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--cl-btn);
+  padding: 1rem 1.5rem;
+  margin: 3rem 0;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in;
+}
+.btn:hover {
+  background-color: var(--cl-primary);
+}
+/* -------------- Utility -------------- */
+.u_section_bg {
+  background: var(--bg-secondary);
+  border-radius: 20px;
+  padding: 5rem 3rem;
+  margin: 4rem 0;
+}
